@@ -321,7 +321,9 @@
           <p>“合格的开发者知道这么做, 而优秀的开发者知道为什么那么做”<br>一. 延迟与带宽</p>
 <p>分组从信息源发到的地所需的时间</p>
 <p>逻辑或物理通信路径最大的吞吐量</p>
-<p>延迟的构成<br>
+<p>延迟的构成</p>
+<p>传播延迟 信号传播距离和速度的函数 =&gt;信号传播距离/速度<br>传输延迟 把消息中比特转移到链路中的时间, 是消息长度和链路速率的函数 =&gt;消息长度/链路速度<br>处理延迟 处理分组头部,检查为错误,以及确定分组目标需要的时间 =&gt;路由处理速度<br>排队延迟 到来的分组排队等待处理的时间 =&gt;网络拥堵状况/路由器处理速度<br>对用户来说超过200ms的延迟,就会感觉到拖拉,超过300ms就会说反应迟钝,超过1s,就会变得不可忍受!尽量把延迟控制在几百ms以内!</p>
+<p>CDN网络=&gt;把内容放在世界各地,让用户从距离最近的地点下载数据,减少延迟<br>延迟中相当一部分花在了ISP到自己路由器的这段距离中 =&gt;选择延迟最小的ISP<br>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/05/16/my-new-post/#more" rel="contents">
@@ -437,18 +439,19 @@
 
       
         
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="CAOPENG小屋"><a href="#CAOPENG小屋" class="headerlink" title="CAOPENG小屋"></a>CAOPENG小屋</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"CAOPENG小屋"</span></div></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/05/16/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
