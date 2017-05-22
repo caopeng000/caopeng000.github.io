@@ -2,9 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2017/05/22/Kotlin-1/</loc>
+    
+    <lastmod>2017-05-22T04:48:18.951Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/tags/index.html</loc>
+    
+    <lastmod>2017-05-19T06:03:19.283Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2017/05/16/my-new-post/</loc>
     
-    <lastmod>2017-05-18T06:55:35.975Z</lastmod>
+    <lastmod>2017-05-19T05:30:40.986Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/categories/index.html</loc>
+    
+    <lastmod>2017-05-19T05:22:55.509Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/photo/index.html</loc>
+    
+    <lastmod>2017-05-19T05:22:55.483Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017/05/16/hello-world/</loc>
+    
+    <lastmod>2017-05-19T05:22:55.411Z</lastmod>
     
   </url>
   
@@ -23,37 +58,9 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/categories/index.html</loc>
-    
-    <lastmod>2017-05-17T08:02:09.466Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/tags/index.html</loc>
-    
-    <lastmod>2017-05-17T08:01:55.488Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/photo/index.html</loc>
-    
-    <lastmod>2017-05-17T05:41:01.011Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/2017/05/16/test/</loc>
     
     <lastmod>2017-05-16T10:15:30.383Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2017/05/16/hello-world/</loc>
-    
-    <lastmod>2017-05-16T09:38:53.136Z</lastmod>
     
   </url>
   
