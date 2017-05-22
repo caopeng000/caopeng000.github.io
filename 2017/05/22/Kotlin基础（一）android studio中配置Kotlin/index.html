@@ -98,7 +98,10 @@
 <meta property="og:site_name" content="Kotlin">
 <meta property="og:description" content="1.   何为Kotlin？Kotlin是一门运行在JVM之上的语言。它由Jetbrains创建，而Jetbrains则是诸多强大的工具（如知名的Java IDE IntelliJ IDEA）背后的公司。Kotlin是一门非常简单的语言，其主要目标之一就是提供强大语言的同时又保持简单且精简的语法。其主要特性如下所示： l  轻量级：这一点对于Android来说非常重要。项目所需要的库应该尽可能的">
 <meta property="og:image" content="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=4027330665,3128340308&fm=23&gp=0.jpg">
-<meta property="og:updated_time" content="2017-05-22T07:52:52.175Z">
+<meta property="og:image" content="http://img.blog.csdn.net/20160731093057917?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center">
+<meta property="og:image" content="http://img.blog.csdn.net/20160731093314246?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center">
+<meta property="og:image" content="http://img.blog.csdn.net/20160731093400432?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center">
+<meta property="og:updated_time" content="2017-05-22T08:09:04.440Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Kotlin基础（一）android studio中配置Kotlin">
 <meta name="twitter:description" content="1.   何为Kotlin？Kotlin是一门运行在JVM之上的语言。它由Jetbrains创建，而Jetbrains则是诸多强大的工具（如知名的Java IDE IntelliJ IDEA）背后的公司。Kotlin是一门非常简单的语言，其主要目标之一就是提供强大语言的同时又保持简单且精简的语法。其主要特性如下所示： l  轻量级：这一点对于Android来说非常重要。项目所需要的库应该尽可能的">
@@ -386,11 +389,13 @@
 </code></pre><h4 id="l-Kotlin-github地址"><a href="#l-Kotlin-github地址" class="headerlink" title="l  Kotlin-github地址"></a>l  Kotlin-github地址</h4><pre><code>https://github.com/JetBrains/kotlin
 </code></pre><h3 id="2-如何在Android开发中使用Kotlin？"><a href="#2-如何在Android开发中使用Kotlin？" class="headerlink" title="2.   如何在Android开发中使用Kotlin？"></a>2.   如何在Android开发中使用Kotlin？</h3><h4 id="2-1下载相关插件"><a href="#2-1下载相关插件" class="headerlink" title="2.1下载相关插件"></a>2.1下载相关插件</h4><p>从IDE plugins中下载Kotlin插件</p>
 <p>在 Settings -&gt; plugins -&gt; BrowseRepositories中搜索“Kotlin”；需要安装Kotlin 和 Kotlin Extensions for Android</p>
+<p><img src="http://img.blog.csdn.net/20160731093057917?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="这里写图片描述"></p>
 <h4 id="2-2在模块中创建Kotlin类"><a href="#2-2在模块中创建Kotlin类" class="headerlink" title="2.2在模块中创建Kotlin类"></a>2.2在模块中创建Kotlin类</h4><p>Kotlin插件安装成功后，new中有两个Kotlin相关选项：</p>
 <p>1）“KotlinFile/Class”：一般Kotlin类</p>
 <p>2）“Kotlin Activity”：Activity类</p>
+<p><img src="http://img.blog.csdn.net/20160731093314246?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="这里写图片描述"></p>
 <h4 id="2-3配置Kotlin"><a href="#2-3配置Kotlin" class="headerlink" title="2.3配置Kotlin"></a>2.3配置Kotlin</h4><p>第一次新建Kotlin类后，会在界面显示“Kotlin not configured”，点击“Configure”，进入Kotlin配置页面，如下图：</p>
-<p>   根据需求配置某个模块或 全部的模块，点击OK即可。</p>
+<p><img src="http://img.blog.csdn.net/20160731093400432?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="这里写图片描述"><br>   根据需求配置某个模块或 全部的模块，点击OK即可。</p>
 <p>   配置完成后，会分别在project的“build.gradle” 和模块的“build.gradle”中配置相关参数：</p>
 <p>1）project的“build.gradle”，注解的为添加的配置项。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">buildscript &#123;</div><div class="line">    ext.kotlin_version=<span class="string">'1.0.3'</span> <span class="comment">//版本</span></div><div class="line">    … …</div><div class="line">    dependencies &#123;</div><div class="line">        … …</div><div class="line">        classpath <span class="string">"org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"</span> <span class="comment">//</span></div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p>2）  模块的“build.gradle”<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">apply plugin: <span class="string">'kotlin-android'</span></div><div class="line"><span class="comment">//</span></div><div class="line">sourceSets &#123;</div><div class="line">    main.java.srcDirs += <span class="string">'src/main/kotlin'</span></div><div class="line">&#125;</div><div class="line"><span class="comment">//</span></div><div class="line">dependencies &#123;</div><div class="line">    … …</div><div class="line">    compile <span class="string">"org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
